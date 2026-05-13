@@ -5,9 +5,10 @@
 Gerçek manzara fotoğraflarını custom eğitilmiş LoRA + AnyLoRA + ControlNet kullanarak demon slayer anime stiline dönüştüren bir proje.
 
 ## Sadece egitilen model test edilir basit adimlari takip ederek hemen calistirilir.
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/KULLANICI_ADIN/photo-style-transfer-/blob/main/notebooks/demo.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ismailarslan02/photo-style-transfer-/blob/main/notebooks/demo.ipynb)
 
 ## Egitim kodu burdaki link ama karmasik
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ismailarslan02/photo-style-transfer-/blob/main/notebooks/demo.ipynb)
 
 ## Hızlı Başlangıç
 
