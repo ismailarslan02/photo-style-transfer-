@@ -1,1 +1,1 @@
-# photo-style-demon-slayer--transfer
+# photo-style-transfer
