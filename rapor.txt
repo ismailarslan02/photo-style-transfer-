@@ -1,0 +1,76 @@
+Proje: Photo-style-transfer
+
+
+Ad-Soyad: İsmail Arslan  
+
+NO:220206408
+
+
+
+1.PROJENIN TANIMI
+
+bu proje bir fotoğrafı 'manzara fotoğrafı kullanılması tercih edilir.' demon slayer animesin deki
+çizim stiline dönüştüren  bir pıpelıne geliştirildi. Stable Diffusion 1.5 modelinde low-rank-
+adaption yöntemi kullanıldı. ve ControlNet ile birleştirilip img2img yapısı yapıldı. Yani yüklenen 
+fotoğrafı o çizim stiline benzetmeye çalışacak.
+
+
+
+2.KULLANILAN KÜTÜPHANLER VE MODELLER
+
+Geliştirilen yer
+  - Google Colab (T4 GPU)
+  - Python 3.12
+
+ Gerekli Kütüphaneler
+  - PyTorch (CUDA 11.8)
+  - Diffusers 0.30.0
+  - Transformers 4.44.2
+  - Accelerate 1.0.0
+  - PEFT 0.13.0
+  - Safetensors 0.4.5
+  - ControlNet_aux 0.0.7
+  - OpenCV
+  - scikit-image
+
+Modeller
+
+- Base Model: AnyLoRA_noVae_fp16-pruned.ckpt (Stable Diffusion 1.5)
+- LoRA: demon_slayer_lora_v2.safetensors  --- benim eğittiğim stil
+- ControlNet:control_v11p_sd15_canny --- bu ise yüklenen fotoğrafı bozmamak için andığımız model
+
+
+
+3.PROJENIN YAPISI
+Sinemaya yeni çıkan bir animeden data-set hazırladım. Görüntüleri 512x512 pixel
+boyutuna getirdim. ve ezberleme yapmasın diye caption dosyaları oluşturdum. Triger word 
+(benim eğittim stil) olarak "dmnslyr_style" tanımladım.
+
+
+eğitimde 10 epoch yaptım sonuncusunu kullandım.
+
+
+4.ANALİZ
+
+SSIM, iki görsel arasındaki yapısal benzerliğe baktık 0-3 ile 0-6 ideal kabul edilir.
+1.0 hiç degismemiş 0.0 tamamen değişmiştir. 
+Benim sonucum: 0.27
+
+
+
+5.KARSILASILAN ZORLUKLAR
+
+1.Fazla kütüphane kullandım hepsinin uyumlu sürümünü bulmak zorladı.
+2.modeli eğitirken ezberleme yapması veya yanlış yapılan yazılan eğitim kodunda modelin stili hic öğrenememesi.
+3.manzara stillerinde daha iyi olmasına ragmen insanlarda stile benzetememesi(düşüncem yaptığım veri setinde sorun var).
+4.Üç farklı bileşenin (img2img, LoRA, ControlNet) aynı pipeline'da birleştirilmeye çalıştırılması biraz karmaşık geldi.
+
+
+6.SONUÇ
+
+ - Modelin başarılı yönleri (manzara üretiminde nasıl performans 
+    gösterdi, hangi tür sahnelerde iyi çalıştı)
+ - Modelin zayıf yönleri (insan figürlerinde nasıl, neden zayıf, 
+    eğitim verisinin yeterli olmaması)
+
+
