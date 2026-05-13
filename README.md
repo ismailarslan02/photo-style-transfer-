@@ -8,7 +8,7 @@ Gerçek manzara fotoğraflarını custom eğitilmiş LoRA + AnyLoRA + ControlNet
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ismailarslan02/photo-style-transfer-/blob/main/notebooks/demo.ipynb)
 
 ## Egitim kodu burdaki link ama karmasik
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ismailarslan02/photo-style-transfer-/blob/main/notebooks/demo.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ismailarslan02/photo-style-transfer-/blob/main/notebooks/train_and_test_notebook.ipynb)
 
 ## Hızlı Başlangıç
 
