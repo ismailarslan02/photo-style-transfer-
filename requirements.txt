@@ -1,1 +1,14 @@
-
+%cd /content/sd-scripts
+!pip install -q \
+    transformers==4.44.2 \
+    diffusers==0.30.0 \
+    accelerate==1.0.0 \
+    peft==0.13.0 \
+    safetensors==0.4.5 \
+    huggingface_hub==0.25.0
+!pip install einops toml ftfy opencv-python
+!pip install lion-pytorch dadaptation
+!pip install pytorch-lightning
+!pip install -U bitsandbytes transformers accelerate peft
+!pip install --upgrade torchao
+!pip install -q controlnet_aux==0.0.7 opencv-python
