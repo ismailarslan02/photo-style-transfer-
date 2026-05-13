@@ -2,7 +2,7 @@
 
 # Demon Slayer Style Transfer
 
-Gerçek manzara fotoğraflarını custom eğitilmiş LoRA + AnyLoRA + ControlNet kullanarak demon slayer anime stiline dönüştüren bir proje.
+Gerçek manzara fotoğraflarını custom eğitilmiş LoRA + AnyLoRA + ControlNet kullanarak demon slayer (bir ara populer olan bir anime) stiline dönüştüren bir proje.
 
 ## Sadece egitilen model test edilir basit adimlari takip ederek hemen calistirilir.
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ismailarslan02/photo-style-transfer-/blob/main/notebooks/demo.ipynb)
